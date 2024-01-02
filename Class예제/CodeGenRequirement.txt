@@ -1,0 +1,31 @@
+1. Requirements
+	Marine 10개를 x,y 좌표를 가지고 생성
+	ChiefMarine을 x,y 좌표를 가지고 생성
+
+
+2. Condition
+두개의 클래스 구성
+    1. 점의 위치를 나타내는 클래스
+    2. 점들의 집합을 나타내는 클래스
+
+3. detail design
+	1. 점의 위치를 나타내는 클래스
+		데이터 : 점의 위치 (x,y)
+		메소드 : 점의 위치 중복가능
+				거리 계산
+				x위치가져오기
+				y위치가져오기
+				plotXY(x,y)
+
+	2. 점들의 집합을 나타내는 클래스
+		데이터 : 점의 위치 array(x,y)
+		매소드 : database에 추가
+				점들간 거리
+				결과 출력
+				plotAll()
+
+4. main() for testing
+	100개의 점을 생성하여 array(x,y)에 추가
+	점들간 거리 계산
+	결과출력
+	array(x,y) 점을 xy graph에 출력하고, 거리가 10이내인 점들을 다른 색으로 표시
